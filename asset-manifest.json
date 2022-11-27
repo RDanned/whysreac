@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/whysreac/static/css/main.a1f6010e.css",
+    "main.js": "/whysreac/static/js/main.d568e6b2.js",
+    "static/js/787.d1a58432.chunk.js": "/whysreac/static/js/787.d1a58432.chunk.js",
+    "index.html": "/whysreac/index.html",
+    "main.a1f6010e.css.map": "/whysreac/static/css/main.a1f6010e.css.map",
+    "main.d568e6b2.js.map": "/whysreac/static/js/main.d568e6b2.js.map",
+    "787.d1a58432.chunk.js.map": "/whysreac/static/js/787.d1a58432.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1f6010e.css",
+    "static/js/main.d568e6b2.js"
+  ]
+}
