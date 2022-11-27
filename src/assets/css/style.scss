@@ -1,0 +1,48 @@
+@import "../libs/normalize.css";
+@import "vars";
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.comments-wrapper {
+  position: relative;
+  margin-top: 25px;
+  background: $white;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid $lightGray;
+
+  &:before {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #bcbcbc;
+    position: absolute;
+    top: -15px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .comment {
+    margin-bottom: 30px;
+  }
+
+  .comment__author {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .comment__date {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .comment__content {
+    padding: 15px 5px 15px 10px;
+    border-left: 1px solid $lightGray;
+  }
+}

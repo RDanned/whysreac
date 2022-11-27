@@ -1,12 +1,10 @@
 import {useEffect, useState} from "react";
-import articleApi from "../api/articles";
+import articleApi from "../../api/articles";
 import uuid from 'react-uuid';
+import ArticleComment from '../Article/ArticleComment';
 
 function ArticleComments({article}){
-    const [initLoading, setInitLoading] = useState(true);
-    const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
-    const [list, setList] = useState([]);
     const [currentOffset, setCurrentOffset] = useState(0)
     const [currentLimit, setCurrentLimit] = useState(2)
     const [totalCount, setTotalCount] = useState(0)
@@ -36,15 +34,15 @@ function ArticleComments({article}){
 
     return (
         <>
-            <ul>
+            <div className="comments-wrapper">
                 {
                     data.length === 0
                     ?
-                    <li>No comments</li>
-                    : data.map(comment => <li key={uuid()}>{comment.text}</li>)
+                    <div>No comments</div>
+                    : data.map(comment => <ArticleComment key={uuid()} comment={comment} />)
 
                 }
-            </ul>
+            </div>
             {
                 showLoadBtn && <button onClick={loadMoreComments}>More</button>
             }

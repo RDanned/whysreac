@@ -1,5 +1,5 @@
 import { Layout } from 'antd';
-import Article from "./components/Article";
+import Article from "./components/Article/Article";
 
 const { Header, Footer, Content } = Layout;
 
