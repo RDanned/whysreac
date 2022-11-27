@@ -30,9 +30,16 @@ const getComments = ({offset = 0, limit = 2}) => {
     })
 }
 
+const getList = () => {
+    return new Promise((resolve) => {
+        resolve([])
+    })
+}
+
 const articleApi = {
     getArticle,
-    getComments
+    getComments,
+    getList
 }
 
 export default articleApi
