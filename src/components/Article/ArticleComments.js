@@ -42,10 +42,11 @@ function ArticleComments({article}){
                     : data.map(comment => <ArticleComment key={uuid()} comment={comment} />)
 
                 }
+
+                {
+                    showLoadBtn && <button className="comments__load-btn" onClick={loadMoreComments}>More comments</button>
+                }
             </div>
-            {
-                showLoadBtn && <button onClick={loadMoreComments}>More</button>
-            }
         </>
     )
 }

@@ -7,11 +7,10 @@ function App() {
     return (
         <>
             <Layout>
-                <Header>Header</Header>
+                <Header className="header">The Blog</Header>
                 <Content>
                     <Article />
                 </Content>
-                <Footer>Footer</Footer>
             </Layout>
         </>
     );

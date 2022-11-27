@@ -7,6 +7,10 @@
   padding: 40px 20px;
 }
 
+.header {
+  color: $white !important;
+}
+
 .comments-wrapper {
   position: relative;
   margin-top: 25px;
@@ -45,4 +49,24 @@
     padding: 15px 5px 15px 10px;
     border-left: 1px solid $lightGray;
   }
+
+  .comments__load-btn {
+    background: none;
+    border: none;
+    outline: none;
+    background: $white;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    color: $mediumGray;
+    transition: 0.2s color;
+
+    &:hover {
+      cursor: pointer;
+      color: $darkGray;
+      transition: 0.2s color;
+    }
+  }
+
+
 }
