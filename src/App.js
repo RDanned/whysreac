@@ -1,17 +1,12 @@
-import { Layout } from 'antd';
-import Article from "./components/Article/Article";
-
-const { Header, Footer, Content } = Layout;
+import {RouterProvider, Outlet} from "react-router-dom";
+import router from "./router";
 
 function App() {
     return (
         <>
-            <Layout>
-                <Header className="header">The Blog</Header>
-                <Content>
-                    <Article />
-                </Content>
-            </Layout>
+            <RouterProvider router={router}>
+                <Outlet />
+            </RouterProvider>
         </>
     );
 }

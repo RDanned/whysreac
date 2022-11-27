@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import articleApi from "../../api/articles";
-import uuid from 'react-uuid';
-import ArticleComment from '../Article/ArticleComment';
+import uuid from "react-uuid";
+import ArticleComment from "../Article/ArticleComment";
 
 function ArticleComments({article}){
     const [data, setData] = useState([]);
